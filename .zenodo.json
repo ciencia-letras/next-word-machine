@@ -1,0 +1,55 @@
+{
+  "title": "The next-word machine: how a language model writes",
+  "upload_type": "software",
+  "description": "<p>Build a sentence word by word, see the probabilities behind each choice, play with temperature and see how text becomes tokens. A teaching resource on the fundamentals of generative AI for non-specialists.</p><p>Teaching resource of the course <em>Fundamentals of generative AI</em> (Ciência e Letras).</p><p>Live tool: <a href=\"https://ciencia-letras.github.io/next-word-machine/\">https://ciencia-letras.github.io/next-word-machine/</a></p><p>Code under the MIT licence; content under CC BY 4.0. Any institution may use, adapt and share it, as long as it cites the tool.</p><p>Illustrative probabilities, for teaching. Not the output of a real model.</p>",
+  "creators": [
+    {
+      "name": "Correia, Ricardo",
+      "affiliation": "Ciência e Letras — Formação Especializada, Lda.",
+      "orcid": "0000-0002-3764-5158"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "generative AI",
+    "large language models",
+    "next-token prediction",
+    "temperature",
+    "tokenization",
+    "hallucination",
+    "AI literacy",
+    "medical education",
+    "open educational resources"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://ciencia-letras.github.io/next-word-machine/",
+      "relation": "isDocumentedBy",
+      "resource_type": "other"
+    },
+    {
+      "identifier": "https://ciencia-letras.github.io/",
+      "relation": "isPartOf",
+      "resource_type": "other"
+    },
+    {
+      "identifier": "https://zenodo.org/communities/ciencia-letras",
+      "relation": "isPartOf",
+      "resource_type": "other"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Ciência e Letras — Formação Especializada, Lda.",
+      "type": "RightsHolder"
+    }
+  ],
+  "notes": "Copyright © 2026 Ciência e Letras — Formação Especializada, Lda. Author: Ricardo Correia.",
+  "communities": [
+    {
+      "identifier": "ciencia-letras"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Next-word machine</title>
+<meta name="description" content="Build a sentence word by word, see the probabilities behind each choice, play with temperature and see how text becomes tokens. A teaching resource on the fundamentals of generative AI for non-specialists.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/machine.css">
+<link rel="stylesheet" href="assets/cel/cel-chrome.css">
+<link rel="icon" href="assets/cel/cel-logo-cores-icon.svg" type="image/svg+xml">
+</head>
+<body>
+<header id="cel-header"></header>
+<div class="cel-layout"><div class="cel-main">
+
+<main class="wrap">
+  <section class="hero">
+    <div class="eyebrow" data-t="eyebrow"></div>
+    <h1 data-t="h1"></h1>
+    <p class="lead" data-t="lead"></p>
+  </section>
+
+  <div class="tabs" role="tablist" id="tabs">
+    <button role="tab" aria-selected="true" data-tab="gen" data-t="tabGen"></button>
+    <button role="tab" aria-selected="false" data-tab="tok" data-t="tabTok"></button>
+    <button role="tab" aria-selected="false" data-tab="prof" data-t="tabProf"></button>
+  </div>
+
+  <!-- ===== Tab 1: generate ===== -->
+  <section class="tab on" id="tab-gen">
+    <div class="panel-card mb">
+      <h2 class="h" data-t="pickStart"></h2>
+      <div class="chips" id="scen"></div>
+    </div>
+    <div class="twocol">
+      <div>
+        <div class="panel-card mb">
+          <h2 class="h" data-t="textTitle"></h2>
+          <div id="text" aria-live="polite"></div>
+          <div class="legend">
+            <span style="--c:var(--ok)" data-t="lgHi"></span>
+            <span style="--c:#D9971A" data-t="lgMid"></span>
+            <span style="--c:var(--alert)" data-t="lgLo"></span>
+          </div>
+          <div class="stats">
+            <div><span data-t="nWords"></span> <b id="nw">0</b></div>
+            <div><span data-t="pSentence"></span> <b id="pf">—</b></div>
+          </div>
+          <div class="insight" id="insight"></div>
+        </div>
+        <div class="panel-card mb">
+          <h2 class="h" data-t="histTitle"></h2>
+          <p class="muted note" id="histhint" data-t="histHint"></p>
+          <ol id="hist"></ol>
+        </div>
+      </div>
+      <div>
+        <div class="panel-card mb">
+          <h2 class="h" data-t="nextTitle"></h2>
+          <p class="muted note" data-t="nextHelp"></p>
+          <div class="cands" id="cands"></div>
+          <div class="controls">
+            <button class="btn primary" id="bPick" data-t="bPick"></button>
+            <button class="btn primary" id="bAuto"></button>
+            <button class="btn" id="bUndo" data-t="bUndo"></button>
+            <button class="btn" id="bReset" data-t="bReset"></button>
+          </div>
+        </div>
+        <div class="panel-card mb temp">
+          <h2 class="h"><span data-t="tempTitle"></span> <span class="val" id="tv">0.7</span> <span class="muted tlab" id="tlab"></span></h2>
+          <input type="range" id="temp" min="0" max="2" step="0.1" value="0.7">
+          <div class="scale"><span data-t="t0"></span><span data-t="t1"></span><span data-t="t2"></span></div>
+          <p class="note muted" data-t="tempHelp"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Tab 2: tokens ===== -->
+  <section class="tab" id="tab-tok">
+    <div class="panel-card mb">
+      <h2 class="h" data-t="tokTitle"></h2>
+      <p class="muted" data-t="tokLead"></p>
+      <div class="chips mb" id="tokex"></div>
+      <textarea id="tin"></textarea>
+      <div class="kpis">
+        <div><div class="big" id="nchar">0</div><div class="muted note" data-t="kChars"></div></div>
+        <div><div class="big" id="nword">0</div><div class="muted note" data-t="kWords"></div></div>
+        <div><div class="big" id="nold">0</div><div class="muted note" data-t="kOld"></div></div>
+        <div><div class="big" id="nnew">0</div><div class="muted note" data-t="kNew"></div></div>
+      </div>
+      <div class="tokbox"><h3 data-t="tokOld"></h3><div class="toks" id="told"></div></div>
+      <div class="tokbox"><h3 data-t="tokNew"></h3><div class="toks" id="tnew"></div></div>
+      <div class="insight show" data-h="tokWhy"></div>
+      <p class="note muted" data-t="tokNote"></p>
+    </div>
+  </section>
+
+  <!-- ===== Tab 3: for the trainer ===== -->
+  <section class="tab" id="tab-prof">
+    <div class="panel-card prose" data-h="guide"></div>
+  </section>
+
+  <footer class="site">
+    <p data-t="foot"></p>
+  </footer>
+</main>
+
+</div><aside id="cel-aside"></aside></div>
+
+<script src="assets/cel/tool.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/tokenizers.js"></script>
+<script src="assets/machine.js"></script>
+<script src="assets/cel/cel-chrome.js"></script>
+</body>
+</html>

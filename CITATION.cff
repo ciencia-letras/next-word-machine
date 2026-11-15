@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+# GENERATED from cel-tool.json. Copyright (c) 2026 Ciência e Letras — Formação Especializada, Lda.
+message: "If you use this tool, please cite it as below. Se usar esta ferramenta, cite-a como indicado abaixo."
+type: software
+title: "The next-word machine: how a language model writes"
+abstract: "Build a sentence word by word, see the probabilities behind each choice, play with temperature and see how text becomes tokens. A teaching resource on the fundamentals of generative AI for non-specialists."
+authors:
+  - given-names: "Ricardo"
+    family-names: "Correia"
+    orcid: "https://orcid.org/0000-0002-3764-5158"
+    affiliation: "Ciência e Letras — Formação Especializada, Lda."
+version: "1.0.0"
+date-released: 2026-11-15
+url: "https://ciencia-letras.github.io/next-word-machine/"
+repository-code: "https://github.com/ciencia-letras/next-word-machine"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - "generative AI"
+  - "large language models"
+  - "next-token prediction"
+  - "temperature"
+  - "tokenization"
+  - "hallucination"
+  - "AI literacy"
+  - "medical education"
+  - "open educational resources"

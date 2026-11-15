@@ -1,0 +1,57 @@
+/* Next-word machine: tool-specific styles (uses the CeL content palette from app.css). */
+.mb { margin-bottom: 16px; }
+.tabs { margin: 0 0 18px; border-bottom: 1px solid var(--grid); }
+.tab { display: none; } .tab.on { display: block; }
+h2.h { font-size: 18px; margin: 0 0 12px; }
+.note { font-size: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { border-radius: 999px; padding: 6px 14px; }
+.chip.on { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.twocol { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 16px; }
+@media (max-width: 900px) { .twocol { grid-template-columns: minmax(0, 1fr); } }
+#text { font-size: 21px; line-height: 1.9; min-height: 110px; padding: 14px; border: 1px dashed var(--grid); border-radius: 10px; background: var(--bg); overflow-wrap: anywhere; }
+#text .p { color: var(--ink2); }
+#text .w { padding: 1px 3px; border-radius: 5px; cursor: help; border-bottom: 3px solid; }
+#text .cursor { display: inline-block; width: 10px; height: 1.1em; background: var(--point); vertical-align: -3px; margin-left: 4px; animation: nwm-blink 1s steps(1) infinite; }
+@keyframes nwm-blink { 50% { opacity: 0; } }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px; color: var(--ink2); margin-top: 8px; }
+.legend span::before { content: ""; display: inline-block; width: 12px; height: 4px; margin-right: 5px; vertical-align: middle; border-radius: 2px; background: var(--c); }
+.stats { display: flex; gap: 18px; flex-wrap: wrap; font-size: 15px; margin-top: 10px; }
+.cands { display: flex; flex-direction: column; gap: 7px; }
+.cand { display: grid; grid-template-columns: minmax(90px, 160px) 1fr 58px; align-items: center; gap: 10px; padding: 7px 10px; text-align: left; white-space: normal; width: 100%; }
+.cand:hover { border-color: var(--point); }
+.cand .lbl { font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cand .bar { height: 12px; background: var(--grid); border-radius: 6px; overflow: hidden; }
+.cand .bar i { display: block; height: 100%; background: var(--point); border-radius: 6px; transition: width .35s; }
+.cand .pct { text-align: right; color: var(--ink2); font-size: 14px; }
+.cand.tail .lbl { font-weight: 400; font-style: italic; color: var(--ink2); }
+.cand.tail .bar i { background: var(--alert); }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.temp input { width: 100%; accent-color: var(--point); }
+.temp .scale { display: flex; justify-content: space-between; gap: 8px; font-size: 12.5px; color: var(--ink2); }
+.temp .val { color: var(--point); }
+.temp .tlab { font-weight: 400; font-size: 15px; }
+.insight { border-left: 4px solid var(--point); background: color-mix(in srgb, var(--point) 10%, var(--surface)); padding: 12px 14px; border-radius: 8px; margin-top: 14px; display: none; }
+.insight.warn { border-left-color: var(--alert); background: color-mix(in srgb, var(--alert) 9%, var(--surface)); }
+.insight.show { display: block; }
+.insight ul { margin: 6px 0 0; padding-left: 20px; }
+.insight p { margin: 8px 0 0; }
+#hist { margin: 0; padding-left: 22px; }
+#hist li { margin: 6px 0; }
+#hist .t { font-size: 13px; color: var(--ink3); }
+.flagp { font-size: 12px; padding: 1px 8px; border-radius: 999px; margin-left: 6px; white-space: nowrap; font-weight: 600; }
+.flagp.bad { background: color-mix(in srgb, var(--alert) 15%, var(--surface)); color: var(--alert); }
+.flagp.inv { background: #FFF3BF; color: #7A5D00; }
+.flagp.ok { background: color-mix(in srgb, var(--ok) 15%, var(--surface)); color: var(--ok); }
+textarea { width: 100%; min-height: 80px; font: inherit; font-size: 17px; padding: 10px; border: 1px solid var(--grid); border-radius: 10px; resize: vertical; background: var(--surface); color: var(--ink); }
+.kpis { display: flex; gap: 26px; flex-wrap: wrap; margin: 12px 0 6px; }
+.big { font-size: 32px; font-weight: 700; color: var(--point); line-height: 1.1; }
+.tokbox { margin-top: 14px; }
+.tokbox h3 { font-size: 15px; margin: 0 0 6px; }
+.toks { display: flex; flex-wrap: wrap; gap: 3px; font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+.toks span { padding: 2px 4px; border-radius: 4px; white-space: pre; color: #14304A; }
+.prose h2 { font-size: 20px; margin: 0 0 10px; }
+.prose h3 { font-size: 16.5px; margin: 20px 0 6px; }
+.prose ol, .prose ul { padding-left: 22px; }
+.prose li { margin: 4px 0; }
