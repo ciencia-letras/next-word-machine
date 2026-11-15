@@ -28,7 +28,12 @@
     "en": "Fundamentals of generative AI",
     "pt": "Fundamentos de IA generativa"
   },
-  "courseIds": [],
+  "courseIds": [
+    "iniciacao-chatgpt",
+    "genai-medicos",
+    "genai-enfermeiros",
+    "genai-farmaceuticos"
+  ],
   "disclaimer": {
     "en": "Illustrative probabilities, for teaching. Not the output of a real model.",
     "pt": "Probabilidades ilustrativas, para formação. Não é a saída de um modelo real."
