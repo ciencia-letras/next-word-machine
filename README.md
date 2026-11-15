@@ -1,7 +1,7 @@
 # Next-word machine
 
 <!-- cel:badge -->
-DOI: pending (Zenodo) · em preparação
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24243368.svg)](https://doi.org/10.5281/zenodo.24243368)
 <!-- /cel:badge -->
 
 **[English](#english)** · **[Português](#português)**
@@ -40,9 +40,9 @@ No server-side code and no data leave the browser. Tokenizers: [gpt-tokenizer](h
 
 Any institution may use, adapt and share this tool, including in teaching and training, **as long as it cites it**. Code: MIT ([LICENSE](LICENSE)). Content: CC BY 4.0 ([LICENSE-CONTENT](LICENSE-CONTENT)).
 
-> Correia, R. (2026). *The next-word machine: how a language model writes* (Version 1.0.0) [Computer software]. Ciência e Letras. https://ciencia-letras.github.io/next-word-machine/
+> Correia, R. (2026). *The next-word machine: how a language model writes* (Version 1.0.0) [Computer software]. Ciência e Letras. https://doi.org/10.5281/zenodo.24243368
 
-A Zenodo DOI will be added after the first release.
+Archived on Zenodo: version DOI [10.5281/zenodo.24243368](https://doi.org/10.5281/zenodo.24243368), all versions [10.5281/zenodo.24243367](https://doi.org/10.5281/zenodo.24243367), in the [Ciência e Letras community](https://zenodo.org/communities/ciencia-letras).
 
 GitHub's “Cite this repository” button (from [CITATION.cff](CITATION.cff)) gives APA and BibTeX.
 <!-- /cel:cite:en -->
@@ -79,9 +79,9 @@ Sem código no servidor e sem dados a sair do browser. Tokenizadores: [gpt-token
 
 Qualquer instituição pode usar, adaptar e partilhar esta ferramenta, incluindo em ensino e formação, **desde que a cite**. Código: MIT ([LICENSE](LICENSE)). Conteúdos: CC BY 4.0 ([LICENSE-CONTENT](LICENSE-CONTENT)).
 
-> Correia, R. (2026). *The next-word machine: how a language model writes* (Version 1.0.0) [Computer software]. Ciência e Letras. https://ciencia-letras.github.io/next-word-machine/
+> Correia, R. (2026). *The next-word machine: how a language model writes* (Version 1.0.0) [Computer software]. Ciência e Letras. https://doi.org/10.5281/zenodo.24243368
 
-O DOI do Zenodo será acrescentado depois da primeira versão publicada.
+Arquivado no Zenodo: DOI desta versão [10.5281/zenodo.24243368](https://doi.org/10.5281/zenodo.24243368), de todas as versões [10.5281/zenodo.24243367](https://doi.org/10.5281/zenodo.24243367), na [comunidade Ciência e Letras](https://zenodo.org/communities/ciencia-letras).
 
 O botão “Cite this repository” do GitHub (a partir de [CITATION.cff](CITATION.cff)) dá APA e BibTeX.
 <!-- /cel:cite:pt -->

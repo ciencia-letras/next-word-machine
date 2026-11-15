@@ -11,7 +11,15 @@ authors:
     affiliation: "Ciência e Letras — Formação Especializada, Lda."
 version: "1.0.0"
 date-released: 2026-11-15
+doi: 10.5281/zenodo.24243368
 url: "https://ciencia-letras.github.io/next-word-machine/"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24243368
+    description: "This version (v1.0.0)"
+  - type: doi
+    value: 10.5281/zenodo.24243367
+    description: "All versions"
 repository-code: "https://github.com/ciencia-letras/next-word-machine"
 license:
   - MIT

@@ -26,8 +26,8 @@ window.CEL_TOOL = {
   "place": "Porto",
   "url": "https://ciencia-letras.github.io/next-word-machine/",
   "repo": "https://github.com/ciencia-letras/next-word-machine",
-  "doi": null,
-  "conceptDoi": null,
+  "doi": "10.5281/zenodo.24243368",
+  "conceptDoi": "10.5281/zenodo.24243367",
   "lab": {
     "en": "https://ciencia-letras.github.io/#resources",
     "pt": "https://ciencia-letras.github.io/pt/#resources"
